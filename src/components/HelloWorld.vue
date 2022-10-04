@@ -253,7 +253,7 @@
             src="../../static/images/practrachange.png" alt="" v-show="!downIcon21">
         </div>
         <!-- 网球场 -->
-        <div v-on:click="changes22">
+        <div v-on:click="changes22" v-show="down6">
           <img id="tag" style=" position: absolute;top: 99.83vw;left: 82vw;" src="../../static/images/tennis.png" alt=""
             v-show="downIcon22">
           <img id="tag" style=" position: absolute;top: 99.83vw;left: 82vw;" src="../../static/images/tennischange.png"
