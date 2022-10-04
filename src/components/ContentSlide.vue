@@ -69,8 +69,8 @@ export default {
   position: absolute;
   z-index: 1;
   margin-top: 1.54vw;
-  margin-bottom: 1.80vw;
-  width: 15vw;
+  margin-bottom: 2vw;
+  width: 17vw;
   height: 6.67vw;
   background-color: #65A3F0;
   border-radius: 7.7vw;

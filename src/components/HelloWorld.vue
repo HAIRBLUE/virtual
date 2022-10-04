@@ -6,20 +6,20 @@
       </div>
     </div>
     <div class="map" @click="fresh">
-      <img src="../../static/images/map.svg" alt="">
+      <img src="../../static/images/map.svg" alt="" @click="fresh">
     </div>
     <div class="topic2">
       <div>上海商学院 奉浦校区</div>
     </div>
     <ContentSlide id="context"></ContentSlide>
-    <div class="allscene">
+    <div class="allscene" @click="AllSCence">
       <img src="../../static/images/allscene.svg" alt="">
-      <!-- <img src="https://ningjintest.oss-cn-beijing.aliyuncs.com/svg/bac.svg" alt="" id="bac"> -->
     </div>
     <div class="main">
-      <!-- <img src="../../static/images/bac.svg" alt="" class="bacpic" id="bac"> -->
-      <img src="https://ningjintest.oss-cn-beijing.aliyuncs.com/svg/bac.svg" alt="" class="bacpic" id="bac"
-        @click="fresh">
+      <div>
+        <img src="https://ningjintest.oss-cn-beijing.aliyuncs.com/svg/bac.svg" id="bac" class="bacpic" alt=""
+          @click="fresh">
+      </div>
       <div action="" class="alltags">
         <!-- 天鹅湖 -->
         <div v-on:click="changes" v-show="down">
@@ -345,6 +345,9 @@ export default {
     };
   },
   methods: {
+    AllSCence() {
+      window.location.href = "http://124.222.26.224:80"
+    },
     fresh() {
       this.downIcon = true
       this.downIcon2 = true
@@ -462,6 +465,30 @@ export default {
       this.down4 = nochange
       this.down5 = nochange
       this.down6 = nochange
+      this.selctIcon = true
+      this.downIcon = true
+      this.downIcon2 = true
+      this.downIcon3 = true
+      this.downIcon4 = true
+      this.downIcon5 = true
+      this.downIcon6 = true
+      this.downIcon7 = true
+      this.downIcon8 = true
+      this.downIcon9 = true
+      this.downIcon10 = true
+      this.downIcon11 = true
+      this.downIcon12 = true
+      this.downIcon13 = true
+      this.downIcon14 = true
+      this.downIcon15 = true
+      this.downIcon16 = true
+      this.downIcon17 = true
+      this.downIcon18 = true
+      this.downIcon19 = true
+      this.downIcon20 = true
+      this.downIcon21 = true
+      this.downIcon22 = true
+      this.downIcon23 = true
     })
     bus.$on('changeScene', (msg, nochange) => {
       this.down = nochange
@@ -470,6 +497,30 @@ export default {
       this.down4 = msg
       this.down5 = msg
       this.down6 = msg
+      this.selctIcon = true
+      this.downIcon = true
+      this.downIcon2 = true
+      this.downIcon3 = true
+      this.downIcon4 = true
+      this.downIcon5 = true
+      this.downIcon6 = true
+      this.downIcon7 = true
+      this.downIcon8 = true
+      this.downIcon9 = true
+      this.downIcon10 = true
+      this.downIcon11 = true
+      this.downIcon12 = true
+      this.downIcon13 = true
+      this.downIcon14 = true
+      this.downIcon15 = true
+      this.downIcon16 = true
+      this.downIcon17 = true
+      this.downIcon18 = true
+      this.downIcon19 = true
+      this.downIcon20 = true
+      this.downIcon21 = true
+      this.downIcon22 = true
+      this.downIcon23 = true
     })
     bus.$on('changeteach', (msg, nochange) => {
       this.down = msg
@@ -478,6 +529,30 @@ export default {
       this.down4 = msg
       this.down5 = msg
       this.down6 = msg
+      this.selctIcon = true
+      this.downIcon = true
+      this.downIcon2 = true
+      this.downIcon3 = true
+      this.downIcon4 = true
+      this.downIcon5 = true
+      this.downIcon6 = true
+      this.downIcon7 = true
+      this.downIcon8 = true
+      this.downIcon9 = true
+      this.downIcon10 = true
+      this.downIcon11 = true
+      this.downIcon12 = true
+      this.downIcon13 = true
+      this.downIcon14 = true
+      this.downIcon15 = true
+      this.downIcon16 = true
+      this.downIcon17 = true
+      this.downIcon18 = true
+      this.downIcon19 = true
+      this.downIcon20 = true
+      this.downIcon21 = true
+      this.downIcon22 = true
+      this.downIcon23 = true
     })
     bus.$on('changecantee', (msg, nochange) => {
       this.down = msg
@@ -486,6 +561,30 @@ export default {
       this.down4 = nochange
       this.down5 = msg
       this.down6 = msg
+      this.selctIcon = true
+      this.downIcon = true
+      this.downIcon2 = true
+      this.downIcon3 = true
+      this.downIcon4 = true
+      this.downIcon5 = true
+      this.downIcon6 = true
+      this.downIcon7 = true
+      this.downIcon8 = true
+      this.downIcon9 = true
+      this.downIcon10 = true
+      this.downIcon11 = true
+      this.downIcon12 = true
+      this.downIcon13 = true
+      this.downIcon14 = true
+      this.downIcon15 = true
+      this.downIcon16 = true
+      this.downIcon17 = true
+      this.downIcon18 = true
+      this.downIcon19 = true
+      this.downIcon20 = true
+      this.downIcon21 = true
+      this.downIcon22 = true
+      this.downIcon23 = true
     })
     bus.$on('changedorm', (msg, nochange) => {
       this.down = msg
@@ -494,6 +593,30 @@ export default {
       this.down4 = msg
       this.down5 = msg
       this.down6 = msg
+      this.selctIcon = true
+      this.downIcon = true
+      this.downIcon2 = true
+      this.downIcon3 = true
+      this.downIcon4 = true
+      this.downIcon5 = true
+      this.downIcon6 = true
+      this.downIcon7 = true
+      this.downIcon8 = true
+      this.downIcon9 = true
+      this.downIcon10 = true
+      this.downIcon11 = true
+      this.downIcon12 = true
+      this.downIcon13 = true
+      this.downIcon14 = true
+      this.downIcon15 = true
+      this.downIcon16 = true
+      this.downIcon17 = true
+      this.downIcon18 = true
+      this.downIcon19 = true
+      this.downIcon20 = true
+      this.downIcon21 = true
+      this.downIcon22 = true
+      this.downIcon23 = true
     })
     bus.$on('changesport', (msg, nochange) => {
       this.down = msg
@@ -502,6 +625,30 @@ export default {
       this.down4 = msg
       this.down5 = msg
       this.down6 = nochange
+      this.selctIcon = true
+      this.downIcon = true
+      this.downIcon2 = true
+      this.downIcon3 = true
+      this.downIcon4 = true
+      this.downIcon5 = true
+      this.downIcon6 = true
+      this.downIcon7 = true
+      this.downIcon8 = true
+      this.downIcon9 = true
+      this.downIcon10 = true
+      this.downIcon11 = true
+      this.downIcon12 = true
+      this.downIcon13 = true
+      this.downIcon14 = true
+      this.downIcon15 = true
+      this.downIcon16 = true
+      this.downIcon17 = true
+      this.downIcon18 = true
+      this.downIcon19 = true
+      this.downIcon20 = true
+      this.downIcon21 = true
+      this.downIcon22 = true
+      this.downIcon23 = true
     })
     bus.$on('changeother', (msg, nochange) => {
       this.down = msg
@@ -510,6 +657,30 @@ export default {
       this.down4 = msg
       this.down5 = nochange
       this.down6 = msg
+      this.selctIcon = true
+      this.downIcon = true
+      this.downIcon2 = true
+      this.downIcon3 = true
+      this.downIcon4 = true
+      this.downIcon5 = true
+      this.downIcon6 = true
+      this.downIcon7 = true
+      this.downIcon8 = true
+      this.downIcon9 = true
+      this.downIcon10 = true
+      this.downIcon11 = true
+      this.downIcon12 = true
+      this.downIcon13 = true
+      this.downIcon14 = true
+      this.downIcon15 = true
+      this.downIcon16 = true
+      this.downIcon17 = true
+      this.downIcon18 = true
+      this.downIcon19 = true
+      this.downIcon20 = true
+      this.downIcon21 = true
+      this.downIcon22 = true
+      this.downIcon23 = true
     })
   }
 }
@@ -563,6 +734,7 @@ body {
   z-index: 10;
   position: absolute;
 }
+
 
 .allscene img {
   margin-left: 85.23vw;
@@ -729,6 +901,8 @@ body {
 }
 
 .tianpic img {
+  width: 26.56vw;
+  height: 25.06vw;
   flex: 1;
   margin-right: 3.7vw;
   margin-top: 3.7vw;

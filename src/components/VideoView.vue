@@ -271,6 +271,8 @@ body {
   // padding: 0 calc(50vw - 160px);
 
   img {
+    width: 86.15vw;
+    height: 48.46vw;
     display: inline;
     margin-right: 4.87vw;
   }
