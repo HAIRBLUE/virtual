@@ -17,8 +17,9 @@
     </div>
     <div class="main">
       <div>
-        <img src="https://ningjintest.oss-cn-beijing.aliyuncs.com/svg/bac.svg" id="bac" class="bacpic" alt=""
-          @click="fresh">
+        <!-- <img src="https://ningjintest.oss-cn-beijing.aliyuncs.com/svg/bac.svg" id="bac" class="bacpic" alt=""
+          @click="fresh"> -->
+        <img src="../../static/images/back22.svg" id="bac" class="bacpic" alt="" @click="fresh">
       </div>
       <div action="" class="alltags">
         <!-- 天鹅湖 -->
@@ -279,7 +280,7 @@
           </div>
         </div>
 
-        <router-link to="/VideoView">
+        <router-link :to="'/' + (obj.topage)">
           <div class="details">查看详情
           </div>
         </router-link>
@@ -334,13 +335,141 @@ export default {
         {
           img: "../../static/images/tianepic.svg",
           title: "天鹅湖",
-          discribe: "绝佳的感受大自然之处"
+          discribe: "绝佳的感受大自然之处",
+          topage: "TianeView"
         },
         {
           img: "../../static/images/tianepic.svg",
-          title: "只因你太美",
-          discribe: "急急急急急急"
-        }
+          title: "女生寝室",
+          discribe: "学生公寓楼",
+          topage: "DormwomenView"
+        },
+        {
+          img: "../../static/images/tianepic.svg",
+          title: "教学楼1&2号楼",
+          discribe: "洋溢活动的教学楼",
+          topage: "Teaching12View"
+        },
+        {
+          img: "../../static/images/tianepic.svg",
+          title: "教学楼3&4",
+          discribe: "洋溢活动的教学楼",
+          topage: "Teaching34View"
+        },
+        {
+          img: "../../static/images/tianepic.svg",
+          title: "食堂",
+          discribe: "畅享各类美食之处",
+          topage: "CanteeView"
+        },
+        {
+          img: "../../static/images/tianepic.svg",
+          title: "浴室",
+          discribe: "畅享各类美食之处",
+          topage: "BathView"
+        },
+        {
+          img: "../../static/images/tianepic.svg",
+          title: "综合楼",
+          discribe: "畅享各类美食之处",
+          topage: "SythesizeView"
+        },
+        {
+          img: "../../static/images/tianepic.svg",
+          title: "东北门",
+          discribe: "畅享各类美食之处",
+          topage: "EastGate"
+        },
+        {
+          img: "../../static/images/tianepic.svg",
+          title: "综合楼辅楼",
+          discribe: "畅享各类美食之处",
+          topage: "Sythesize2View"
+        },
+        {
+          img: "../../static/images/tianepic.svg",
+          title: "东北1门",
+          discribe: "畅享各类美食之处",
+          topage: "EastGate1View"
+        },
+        {
+          img: "../../static/images/tianepic.svg",
+          title: "超市",
+          discribe: "畅享各类美食之处",
+          topage: "SupermarketView"
+        },
+        {
+          img: "../../static/images/tianepic.svg",
+          title: "图文信息楼",
+          discribe: "畅享各类美食之处",
+          topage: "GraphicView"
+        },
+        {
+          img: "../../static/images/tianepic.svg",
+          title: "广场",
+          discribe: "畅享各类美食之处",
+          topage: "SquareView"
+        },
+        {
+          img: "../../static/images/tianepic.svg",
+          title: "北大门",
+          discribe: "畅享各类美食之处",
+          topage: "NorthGate"
+        },
+        {
+          img: "../../static/images/tianepic.svg",
+          title: "行政楼",
+          discribe: "畅享各类美食之处",
+          topage: "Administrative"
+        },
+        {
+          img: "../../static/images/tianepic.svg",
+          title: "田径场",
+          discribe: "畅享各类美食之处",
+          topage: "RunView"
+        },
+        {
+          img: "../../static/images/tianepic.svg",
+          title: "篮球场",
+          discribe: "畅享各类美食之处",
+          topage: "Basketball"
+        },
+        {
+          img: "../../static/images/tianepic.svg",
+          title: "体育馆",
+          discribe: "畅享各类美食之处",
+          topage: "PhyeduView"
+        },
+        {
+          img: "../../static/images/tianepic.svg",
+          title: "足球场",
+          discribe: "畅享各类美食之处",
+          topage: "Football"
+        },
+        {
+          img: "../../static/images/tianepic.svg",
+          title: "实训楼",
+          discribe: "畅享各类美食之处",
+          topage: "PractraView"
+        },
+        {
+          img: "../../static/images/tianepic.svg",
+          title: "网球场",
+          discribe: "畅享各类美食之处",
+          topage: "TennisView"
+        },
+        {
+          img: "../../static/images/tianepic.svg",
+          title: "南大门",
+          discribe: "畅享各类美食之处",
+          topage: "SourthGate"
+        },
+        {
+          img: "../../static/images/tianepic.svg",
+          title: "男生寝室",
+          discribe: "畅享各类美食之处",
+          topage: "DormmanView"
+        },
       ]
     };
   },
@@ -385,66 +514,108 @@ export default {
     },
     changes3() {
       this.downIcon3 = !this.downIcon3
+      this.obj = this.objcontent[22]
+      this.selctIcon = !this.selctIcon
     },
     changes4() {
       this.downIcon4 = !this.downIcon4
+      this.obj = this.objcontent[2]
+      this.selctIcon = !this.selctIcon
     },
     changes5() {
       this.downIcon5 = !this.downIcon5
+      this.obj = this.objcontent[3]
+      this.selctIcon = !this.selctIcon
     },
     changes6() {
       this.downIcon6 = !this.downIcon6
+      this.obj = this.objcontent[4]
+      this.selctIcon = !this.selctIcon
     },
     changes7() {
       this.downIcon7 = !this.downIcon7
+      this.obj = this.objcontent[5]
+      this.selctIcon = !this.selctIcon
     },
     changes8() {
       this.downIcon8 = !this.downIcon8
+      this.obj = this.objcontent[6]
+      this.selctIcon = !this.selctIcon
     },
     changes9() {
       this.downIcon9 = !this.downIcon9
+      this.obj = this.objcontent[7]
+      this.selctIcon = !this.selctIcon
     },
     changes10() {
       this.downIcon10 = !this.downIcon10
+      this.obj = this.objcontent[8]
+      this.selctIcon = !this.selctIcon
     },
     changes11() {
       this.downIcon11 = !this.downIcon11
+      this.obj = this.objcontent[9]
+      this.selctIcon = !this.selctIcon
     },
     changes12() {
       this.downIcon12 = !this.downIcon12
+      this.obj = this.objcontent[10]
+      this.selctIcon = !this.selctIcon
     },
     changes13() {
       this.downIcon13 = !this.downIcon13
+      this.obj = this.objcontent[11]
+      this.selctIcon = !this.selctIcon
     },
     changes14() {
       this.downIcon14 = !this.downIcon14
+      this.obj = this.objcontent[12]
+      this.selctIcon = !this.selctIcon
     },
     changes15() {
       this.downIcon15 = !this.downIcon15
+      this.obj = this.objcontent[13]
+      this.selctIcon = !this.selctIcon
     },
     changes16() {
       this.downIcon16 = !this.downIcon16
+      this.obj = this.objcontent[14]
+      this.selctIcon = !this.selctIcon
     },
     changes17() {
       this.downIcon17 = !this.downIcon17
+      this.obj = this.objcontent[15]
+      this.selctIcon = !this.selctIcon
     },
     changes18() {
       this.downIcon18 = !this.downIcon18
+      this.obj = this.objcontent[16]
+      this.selctIcon = !this.selctIcon
     },
     changes19() {
       this.downIcon19 = !this.downIcon19
+      this.obj = this.objcontent[17]
+      this.selctIcon = !this.selctIcon
     },
     changes20() {
       this.downIcon20 = !this.downIcon20
+      this.obj = this.objcontent[18]
+      this.selctIcon = !this.selctIcon
     },
     changes21() {
       this.downIcon21 = !this.downIcon21
+      this.obj = this.objcontent[19]
+      this.selctIcon = !this.selctIcon
     },
     changes22() {
       this.downIcon22 = !this.downIcon22
+      this.obj = this.objcontent[20]
+      this.selctIcon = !this.selctIcon
     },
     changes23() {
       this.downIcon23 = !this.downIcon23
+      this.obj = this.objcontent[21]
+      this.selctIcon = !this.selctIcon
     },
     selectshow() {
       this.selctIcon = !this.selctIcon

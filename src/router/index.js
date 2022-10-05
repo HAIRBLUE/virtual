@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import HelloWorldVue from '../components/HelloWorld.vue'
-import VideoView from '../components/VideoView.vue'
+import TianeView from '../components/TianeView.vue'
 
 
 Vue.use(VueRouter)
@@ -22,9 +22,9 @@ const routes = [
     component: HelloWorldVue
   },
   {
-    path: '/VideoView',
-    name: 'VideoView',
-    component: VideoView
+    path: '/TianeView',
+    name: 'TianeView',
+    component: TianeView
   }
 ]
 
