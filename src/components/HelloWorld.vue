@@ -25,9 +25,9 @@
         <!-- 天鹅湖 -->
         <div v-on:click="changes" v-show="down">
           <img id="tag" style=" position: absolute;top: 75.83vw;left: 49vw;" src="../../static/images/park.png" alt=""
-            v-show="downIcon" v-on:click="selectshow">
+            v-show="downIcon">
           <img id="tag" style=" position: absolute;top: 75.83vw;left: 50vw;" src="../../static/images/parkchange.png"
-            alt="" v-show="!downIcon" v-on:click="selectshow">
+            alt="" v-show="!downIcon">
         </div>
         <!-- 学生公寓 -->
         <div v-show="down2">
@@ -173,7 +173,7 @@
         <div v-on:click="changes10" v-show="down5">
           <img id="tag" style=" position: absolute;top: 80.83vw;left: 0vw;" src="../../static/images/synthesis2.png"
             alt="" v-show="downIcon10">
-          <img id="tag" style=" position: absolute;top: 80.83vw;left: 0vw;"
+          <img id="tag" style=" position: absolute;top: 80.83vw;left: 2vw;"
             src="../../static/images/synthesis2change.png" alt="" v-show="!downIcon10">
         </div>
         <!-- 东北1门 -->
@@ -270,7 +270,8 @@
       </div>
       <div class="contpart" v-show="!selctIcon">
         <div class="tianpic">
-          <img src="../../static/images/tianepic.png" alt="">
+          <img :src="obj.img" alt="">
+          <!-- <img src="../../static/images/cantee-main.png" alt=""> -->
         </div>
         <div class="rightcont">
           <div>{{obj.title}}</div>
@@ -333,141 +334,141 @@ export default {
       obj: {},
       objcontent: [
         {
-          img: "../../static/images/tianepic.svg",
+          img: require("../../static/images/tianepic.png"),
           title: "天鹅湖",
           discribe: "绝佳的感受大自然之处",
           topage: "TianeView"
         },
         {
-          img: "../../static/images/tianepic.svg",
-          title: "女生寝室",
-          discribe: "学生公寓楼",
+          img: require("../../static/images/dormwomen-main.png"),
+          title: "学生公寓1-6号楼",
+          discribe: "女生公寓",
           topage: "DormwomenView"
         },
         {
-          img: "../../static/images/tianepic.svg",
+          img: require("../../static/images/teach12-main.png"),
           title: "教学楼1&2号楼",
-          discribe: "洋溢活动的教学楼",
+          discribe: "学习与活动之处",
           topage: "Teaching12View"
         },
         {
-          img: "../../static/images/tianepic.svg",
+          img: require("../../static/images/teach34-main.png"),
           title: "教学楼3&4",
-          discribe: "洋溢活动的教学楼",
+          discribe: "艺术的研习之地",
           topage: "Teaching34View"
         },
         {
-          img: "../../static/images/tianepic.svg",
+          img: require("../../static/images/cantee-main.png"),
           title: "食堂",
           discribe: "畅享各类美食之处",
           topage: "CanteeView"
         },
         {
-          img: "../../static/images/tianepic.svg",
+          img: require("../../static/images/bath-main.png"),
           title: "浴室",
-          discribe: "畅享各类美食之处",
+          discribe: "在这里洗去一天的疲惫",
           topage: "BathView"
         },
         {
-          img: "../../static/images/tianepic.svg",
+          img: require("../../static/images/synthesize-main.png"),
           title: "综合楼",
-          discribe: "畅享各类美食之处",
+          discribe: "教工办公之处",
           topage: "SythesizeView"
         },
         {
-          img: "../../static/images/tianepic.svg",
+          img: require("../../static/images/eastnorth-main.png"),
           title: "东北门",
-          discribe: "畅享各类美食之处",
+          discribe: "东北侧大门",
           topage: "EastGate"
         },
         {
-          img: "../../static/images/tianepic.svg",
+          img: require("../../static/images/synthesize2-main.png"),
           title: "综合楼辅楼",
           discribe: "畅享各类美食之处",
           topage: "Sythesize2View"
         },
         {
-          img: "../../static/images/tianepic.svg",
+          img: require("../../static/images/eastnorth1-main.png"),
           title: "东北1门",
-          discribe: "畅享各类美食之处",
+          discribe: "学生相关事务处理之处",
           topage: "EastGate1View"
         },
         {
-          img: "../../static/images/tianepic.svg",
+          img: require("../../static/images/supermarket-main.png"),
           title: "超市",
-          discribe: "畅享各类美食之处",
+          discribe: "天猫超市",
           topage: "SupermarketView"
         },
         {
-          img: "../../static/images/tianepic.svg",
+          img: require("../../static/images/graphic-main.png"),
           title: "图文信息楼",
-          discribe: "畅享各类美食之处",
+          discribe: "藏书与信息学院实践基地",
           topage: "GraphicView"
         },
         {
-          img: "../../static/images/tianepic.svg",
+          img: require("../../static/images/northgate-main.png"),
           title: "广场",
-          discribe: "畅享各类美食之处",
+          discribe: "北侧广场",
           topage: "SquareView"
         },
         {
-          img: "../../static/images/tianepic.svg",
+          img: require("../../static/images/northgate-main.png"),
           title: "北大门",
-          discribe: "畅享各类美食之处",
+          discribe: "北侧大门",
           topage: "NorthGate"
         },
         {
-          img: "../../static/images/tianepic.svg",
+          img: require("../../static/images/administrative-main.png"),
           title: "行政楼",
-          discribe: "畅享各类美食之处",
+          discribe: "学生事务中心",
           topage: "Administrative"
         },
         {
-          img: "../../static/images/tianepic.svg",
+          img: require("../../static/images/run-main.png"),
           title: "田径场",
-          discribe: "畅享各类美食之处",
+          discribe: "运动与娱乐之处",
           topage: "RunView"
         },
         {
-          img: "../../static/images/tianepic.svg",
+          img: require("../../static/images/basketball-main.png"),
           title: "篮球场",
-          discribe: "畅享各类美食之处",
+          discribe: "篮球运动场地",
           topage: "Basketball"
         },
         {
-          img: "../../static/images/tianepic.svg",
+          img: require("../../static/images/phyedu-main.png"),
           title: "体育馆",
-          discribe: "畅享各类美食之处",
+          discribe: "体育竞技与活动之处",
           topage: "PhyeduView"
         },
         {
-          img: "../../static/images/tianepic.svg",
+          img: require("../../static/images/football-main.png"),
           title: "足球场",
-          discribe: "畅享各类美食之处",
+          discribe: "足球运动之处",
           topage: "Football"
         },
         {
-          img: "../../static/images/tianepic.svg",
+          img: require("../../static/images/practra-main.png"),
           title: "实训楼",
-          discribe: "畅享各类美食之处",
+          discribe: "商科综合实验基地",
           topage: "PractraView"
         },
         {
-          img: "../../static/images/tianepic.svg",
+          img: require("../../static/images/tennis-main.png"),
           title: "网球场",
-          discribe: "畅享各类美食之处",
+          discribe: "网球运动场地",
           topage: "TennisView"
         },
         {
-          img: "../../static/images/tianepic.svg",
+          img: require("../../static/images/sourthgate-main.png"),
           title: "南大门",
-          discribe: "畅享各类美食之处",
+          discribe: "南侧大门",
           topage: "SourthGate"
         },
         {
-          img: "../../static/images/tianepic.svg",
-          title: "男生寝室",
-          discribe: "畅享各类美食之处",
+          img: require("../../static/images/dormman-main.png"),
+          title: "学生公寓 7-10 号楼",
+          discribe: "男生公寓",
           topage: "DormmanView"
         },
       ]
@@ -506,120 +507,762 @@ export default {
     changes() {
       this.downIcon = !this.downIcon
       this.obj = this.objcontent[0]
+      if (this.selctIcon == true) {
+        this.selctIcon = !this.selctIcon
+      } else {
+        this.downIcon2 = true
+        this.downIcon3 = true
+        this.downIcon4 = true
+        this.downIcon5 = true
+        this.downIcon6 = true
+        this.downIcon7 = true
+        this.downIcon8 = true
+        this.downIcon9 = true
+        this.downIcon10 = true
+        this.downIcon11 = true
+        this.downIcon12 = true
+        this.downIcon13 = true
+        this.downIcon14 = true
+        this.downIcon15 = true
+        this.downIcon16 = true
+        this.downIcon17 = true
+        this.downIcon18 = true
+        this.downIcon19 = true
+        this.downIcon20 = true
+        this.downIcon21 = true
+        this.downIcon22 = true
+        this.downIcon23 = true
+      }
+      if (this.downIcon == true) {
+        this.selctIcon = !this.selctIcon
+      }
     },
     changes2() {
       this.downIcon2 = !this.downIcon2
       this.obj = this.objcontent[1]
-      this.selctIcon = !this.selctIcon
+      if (this.selctIcon == true) {
+        this.selctIcon = !this.selctIcon
+      } else {
+        this.downIcon = true
+        this.downIcon3 = true
+        this.downIcon4 = true
+        this.downIcon5 = true
+        this.downIcon6 = true
+        this.downIcon7 = true
+        this.downIcon8 = true
+        this.downIcon9 = true
+        this.downIcon10 = true
+        this.downIcon11 = true
+        this.downIcon12 = true
+        this.downIcon13 = true
+        this.downIcon14 = true
+        this.downIcon15 = true
+        this.downIcon16 = true
+        this.downIcon17 = true
+        this.downIcon18 = true
+        this.downIcon19 = true
+        this.downIcon20 = true
+        this.downIcon21 = true
+        this.downIcon22 = true
+        this.downIcon23 = true
+      }
+      if (this.downIcon2 == true) {
+        this.selctIcon = !this.selctIcon
+      }
     },
     changes3() {
       this.downIcon3 = !this.downIcon3
       this.obj = this.objcontent[22]
-      this.selctIcon = !this.selctIcon
+      if (this.selctIcon == true) {
+        this.selctIcon = !this.selctIcon
+      } else {
+        this.downIcon = true
+        this.downIcon2 = true
+        this.downIcon4 = true
+        this.downIcon5 = true
+        this.downIcon6 = true
+        this.downIcon7 = true
+        this.downIcon8 = true
+        this.downIcon9 = true
+        this.downIcon10 = true
+        this.downIcon11 = true
+        this.downIcon12 = true
+        this.downIcon13 = true
+        this.downIcon14 = true
+        this.downIcon15 = true
+        this.downIcon16 = true
+        this.downIcon17 = true
+        this.downIcon18 = true
+        this.downIcon19 = true
+        this.downIcon20 = true
+        this.downIcon21 = true
+        this.downIcon22 = true
+        this.downIcon23 = true
+      }
+      if (this.downIcon3 == true) {
+        this.selctIcon = !this.selctIcon
+      }
     },
     changes4() {
       this.downIcon4 = !this.downIcon4
       this.obj = this.objcontent[2]
-      this.selctIcon = !this.selctIcon
+      if (this.selctIcon == true) {
+        this.selctIcon = !this.selctIcon
+      } else {
+        this.downIcon = true
+        this.downIcon2 = true
+        this.downIcon3 = true
+        this.downIcon5 = true
+        this.downIcon6 = true
+        this.downIcon7 = true
+        this.downIcon8 = true
+        this.downIcon9 = true
+        this.downIcon10 = true
+        this.downIcon11 = true
+        this.downIcon12 = true
+        this.downIcon13 = true
+        this.downIcon14 = true
+        this.downIcon15 = true
+        this.downIcon16 = true
+        this.downIcon17 = true
+        this.downIcon18 = true
+        this.downIcon19 = true
+        this.downIcon20 = true
+        this.downIcon21 = true
+        this.downIcon22 = true
+        this.downIcon23 = true
+      }
+      if (this.downIcon4 == true) {
+        this.selctIcon = !this.selctIcon
+      }
     },
     changes5() {
       this.downIcon5 = !this.downIcon5
       this.obj = this.objcontent[3]
-      this.selctIcon = !this.selctIcon
+      if (this.selctIcon == true) {
+        this.selctIcon = !this.selctIcon
+      } else {
+        this.downIcon = true
+        this.downIcon2 = true
+        this.downIcon3 = true
+        this.downIcon4 = true
+        this.downIcon6 = true
+        this.downIcon7 = true
+        this.downIcon8 = true
+        this.downIcon9 = true
+        this.downIcon10 = true
+        this.downIcon11 = true
+        this.downIcon12 = true
+        this.downIcon13 = true
+        this.downIcon14 = true
+        this.downIcon15 = true
+        this.downIcon16 = true
+        this.downIcon17 = true
+        this.downIcon18 = true
+        this.downIcon19 = true
+        this.downIcon20 = true
+        this.downIcon21 = true
+        this.downIcon22 = true
+        this.downIcon23 = true
+      }
+      if (this.downIcon5 == true) {
+        this.selctIcon = !this.selctIcon
+      }
     },
     changes6() {
       this.downIcon6 = !this.downIcon6
       this.obj = this.objcontent[4]
-      this.selctIcon = !this.selctIcon
+      if (this.selctIcon == true) {
+        this.selctIcon = !this.selctIcon
+      } else {
+        this.downIcon = true
+        this.downIcon2 = true
+        this.downIcon3 = true
+        this.downIcon4 = true
+        this.downIcon5 = true
+        this.downIcon7 = true
+        this.downIcon8 = true
+        this.downIcon9 = true
+        this.downIcon10 = true
+        this.downIcon11 = true
+        this.downIcon12 = true
+        this.downIcon13 = true
+        this.downIcon14 = true
+        this.downIcon15 = true
+        this.downIcon16 = true
+        this.downIcon17 = true
+        this.downIcon18 = true
+        this.downIcon19 = true
+        this.downIcon20 = true
+        this.downIcon21 = true
+        this.downIcon22 = true
+        this.downIcon23 = true
+      }
+      if (this.downIcon6 == true) {
+        this.selctIcon = !this.selctIcon
+      }
     },
     changes7() {
       this.downIcon7 = !this.downIcon7
       this.obj = this.objcontent[5]
-      this.selctIcon = !this.selctIcon
+      if (this.selctIcon == true) {
+        this.selctIcon = !this.selctIcon
+      } else {
+        this.downIcon = true
+        this.downIcon2 = true
+        this.downIcon3 = true
+        this.downIcon4 = true
+        this.downIcon5 = true
+        this.downIcon6 = true
+        this.downIcon8 = true
+        this.downIcon9 = true
+        this.downIcon10 = true
+        this.downIcon11 = true
+        this.downIcon12 = true
+        this.downIcon13 = true
+        this.downIcon14 = true
+        this.downIcon15 = true
+        this.downIcon16 = true
+        this.downIcon17 = true
+        this.downIcon18 = true
+        this.downIcon19 = true
+        this.downIcon20 = true
+        this.downIcon21 = true
+        this.downIcon22 = true
+        this.downIcon23 = true
+      }
+      if (this.downIcon7 == true) {
+        this.selctIcon = !this.selctIcon
+      }
     },
     changes8() {
       this.downIcon8 = !this.downIcon8
       this.obj = this.objcontent[6]
-      this.selctIcon = !this.selctIcon
+      if (this.selctIcon == true) {
+        this.selctIcon = !this.selctIcon
+      } else {
+        this.downIcon = true
+        this.downIcon2 = true
+        this.downIcon3 = true
+        this.downIcon4 = true
+        this.downIcon5 = true
+        this.downIcon6 = true
+        this.downIcon7 = true
+        this.downIcon9 = true
+        this.downIcon10 = true
+        this.downIcon11 = true
+        this.downIcon12 = true
+        this.downIcon13 = true
+        this.downIcon14 = true
+        this.downIcon15 = true
+        this.downIcon16 = true
+        this.downIcon17 = true
+        this.downIcon18 = true
+        this.downIcon19 = true
+        this.downIcon20 = true
+        this.downIcon21 = true
+        this.downIcon22 = true
+        this.downIcon23 = true
+      }
+      if (this.downIcon8 == true) {
+        this.selctIcon = !this.selctIcon
+      }
     },
     changes9() {
       this.downIcon9 = !this.downIcon9
       this.obj = this.objcontent[7]
-      this.selctIcon = !this.selctIcon
+      if (this.selctIcon == true) {
+        this.selctIcon = !this.selctIcon
+      } else {
+        this.downIcon = true
+        this.downIcon2 = true
+        this.downIcon3 = true
+        this.downIcon4 = true
+        this.downIcon5 = true
+        this.downIcon6 = true
+        this.downIcon7 = true
+        this.downIcon8 = true
+        this.downIcon10 = true
+        this.downIcon11 = true
+        this.downIcon12 = true
+        this.downIcon13 = true
+        this.downIcon14 = true
+        this.downIcon15 = true
+        this.downIcon16 = true
+        this.downIcon17 = true
+        this.downIcon18 = true
+        this.downIcon19 = true
+        this.downIcon20 = true
+        this.downIcon21 = true
+        this.downIcon22 = true
+        this.downIcon23 = true
+      }
+      if (this.downIcon9 == true) {
+        this.selctIcon = !this.selctIcon
+      }
     },
     changes10() {
       this.downIcon10 = !this.downIcon10
       this.obj = this.objcontent[8]
-      this.selctIcon = !this.selctIcon
+      if (this.selctIcon == true) {
+        this.selctIcon = !this.selctIcon
+      } else {
+        this.downIcon = true
+        this.downIcon2 = true
+        this.downIcon3 = true
+        this.downIcon4 = true
+        this.downIcon5 = true
+        this.downIcon6 = true
+        this.downIcon7 = true
+        this.downIcon8 = true
+        this.downIcon9 = true
+        this.downIcon11 = true
+        this.downIcon12 = true
+        this.downIcon13 = true
+        this.downIcon14 = true
+        this.downIcon15 = true
+        this.downIcon16 = true
+        this.downIcon17 = true
+        this.downIcon18 = true
+        this.downIcon19 = true
+        this.downIcon20 = true
+        this.downIcon21 = true
+        this.downIcon22 = true
+        this.downIcon23 = true
+      }
+      if (this.downIcon10 == true) {
+        this.selctIcon = !this.selctIcon
+      }
     },
     changes11() {
       this.downIcon11 = !this.downIcon11
       this.obj = this.objcontent[9]
-      this.selctIcon = !this.selctIcon
+      if (this.selctIcon == true) {
+        this.selctIcon = !this.selctIcon
+      } else {
+        this.downIcon = true
+        this.downIcon2 = true
+        this.downIcon3 = true
+        this.downIcon4 = true
+        this.downIcon5 = true
+        this.downIcon6 = true
+        this.downIcon7 = true
+        this.downIcon8 = true
+        this.downIcon9 = true
+        this.downIcon10 = true
+        this.downIcon12 = true
+        this.downIcon13 = true
+        this.downIcon14 = true
+        this.downIcon15 = true
+        this.downIcon16 = true
+        this.downIcon17 = true
+        this.downIcon18 = true
+        this.downIcon19 = true
+        this.downIcon20 = true
+        this.downIcon21 = true
+        this.downIcon22 = true
+        this.downIcon23 = true
+      }
+      if (this.downIcon11 == true) {
+        this.selctIcon = !this.selctIcon
+      }
     },
     changes12() {
       this.downIcon12 = !this.downIcon12
       this.obj = this.objcontent[10]
-      this.selctIcon = !this.selctIcon
+      if (this.selctIcon == true) {
+        this.selctIcon = !this.selctIcon
+      } else {
+        this.downIcon = true
+        this.downIcon2 = true
+        this.downIcon3 = true
+        this.downIcon4 = true
+        this.downIcon5 = true
+        this.downIcon6 = true
+        this.downIcon7 = true
+        this.downIcon8 = true
+        this.downIcon9 = true
+        this.downIcon10 = true
+        this.downIcon11 = true
+        this.downIcon13 = true
+        this.downIcon14 = true
+        this.downIcon15 = true
+        this.downIcon16 = true
+        this.downIcon17 = true
+        this.downIcon18 = true
+        this.downIcon19 = true
+        this.downIcon20 = true
+        this.downIcon21 = true
+        this.downIcon22 = true
+        this.downIcon23 = true
+      }
+      if (this.downIcon12 == true) {
+        this.selctIcon = !this.selctIcon
+      }
     },
     changes13() {
       this.downIcon13 = !this.downIcon13
       this.obj = this.objcontent[11]
-      this.selctIcon = !this.selctIcon
+      if (this.selctIcon == true) {
+        this.selctIcon = !this.selctIcon
+      } else {
+        this.downIcon = true
+        this.downIcon2 = true
+        this.downIcon3 = true
+        this.downIcon4 = true
+        this.downIcon5 = true
+        this.downIcon6 = true
+        this.downIcon7 = true
+        this.downIcon8 = true
+        this.downIcon9 = true
+        this.downIcon10 = true
+        this.downIcon11 = true
+        this.downIcon12 = true
+        this.downIcon14 = true
+        this.downIcon15 = true
+        this.downIcon16 = true
+        this.downIcon17 = true
+        this.downIcon18 = true
+        this.downIcon19 = true
+        this.downIcon20 = true
+        this.downIcon21 = true
+        this.downIcon22 = true
+        this.downIcon23 = true
+      }
+      if (this.downIcon13 == true) {
+        this.selctIcon = !this.selctIcon
+      }
     },
     changes14() {
       this.downIcon14 = !this.downIcon14
       this.obj = this.objcontent[12]
-      this.selctIcon = !this.selctIcon
+      if (this.selctIcon == true) {
+        this.selctIcon = !this.selctIcon
+      } else {
+        this.downIcon = true
+        this.downIcon2 = true
+        this.downIcon3 = true
+        this.downIcon4 = true
+        this.downIcon5 = true
+        this.downIcon6 = true
+        this.downIcon7 = true
+        this.downIcon8 = true
+        this.downIcon9 = true
+        this.downIcon10 = true
+        this.downIcon11 = true
+        this.downIcon12 = true
+        this.downIcon13 = true
+        this.downIcon15 = true
+        this.downIcon16 = true
+        this.downIcon17 = true
+        this.downIcon18 = true
+        this.downIcon19 = true
+        this.downIcon20 = true
+        this.downIcon21 = true
+        this.downIcon22 = true
+        this.downIcon23 = true
+      }
+      if (this.downIcon14 == true) {
+        this.selctIcon = !this.selctIcon
+      }
     },
     changes15() {
       this.downIcon15 = !this.downIcon15
       this.obj = this.objcontent[13]
-      this.selctIcon = !this.selctIcon
+      if (this.selctIcon == true) {
+        this.selctIcon = !this.selctIcon
+      } else {
+        this.downIcon = true
+        this.downIcon2 = true
+        this.downIcon3 = true
+        this.downIcon4 = true
+        this.downIcon5 = true
+        this.downIcon6 = true
+        this.downIcon7 = true
+        this.downIcon8 = true
+        this.downIcon9 = true
+        this.downIcon10 = true
+        this.downIcon11 = true
+        this.downIcon12 = true
+        this.downIcon13 = true
+        this.downIcon14 = true
+        this.downIcon16 = true
+        this.downIcon17 = true
+        this.downIcon18 = true
+        this.downIcon19 = true
+        this.downIcon20 = true
+        this.downIcon21 = true
+        this.downIcon22 = true
+        this.downIcon23 = true
+      }
+      if (this.downIcon15 == true) {
+        this.selctIcon = !this.selctIcon
+      }
     },
     changes16() {
       this.downIcon16 = !this.downIcon16
       this.obj = this.objcontent[14]
-      this.selctIcon = !this.selctIcon
+      if (this.selctIcon == true) {
+        this.selctIcon = !this.selctIcon
+      } else {
+        this.downIcon = true
+        this.downIcon2 = true
+        this.downIcon3 = true
+        this.downIcon4 = true
+        this.downIcon5 = true
+        this.downIcon6 = true
+        this.downIcon7 = true
+        this.downIcon8 = true
+        this.downIcon9 = true
+        this.downIcon10 = true
+        this.downIcon11 = true
+        this.downIcon12 = true
+        this.downIcon13 = true
+        this.downIcon14 = true
+        this.downIcon15 = true
+        this.downIcon17 = true
+        this.downIcon18 = true
+        this.downIcon19 = true
+        this.downIcon20 = true
+        this.downIcon21 = true
+        this.downIcon22 = true
+        this.downIcon23 = true
+      }
+      if (this.downIcon16 == true) {
+        this.selctIcon = !this.selctIcon
+      }
     },
     changes17() {
       this.downIcon17 = !this.downIcon17
       this.obj = this.objcontent[15]
-      this.selctIcon = !this.selctIcon
+      if (this.selctIcon == true) {
+        this.selctIcon = !this.selctIcon
+      } else {
+        this.downIcon = true
+        this.downIcon2 = true
+        this.downIcon3 = true
+        this.downIcon4 = true
+        this.downIcon5 = true
+        this.downIcon6 = true
+        this.downIcon7 = true
+        this.downIcon8 = true
+        this.downIcon9 = true
+        this.downIcon10 = true
+        this.downIcon11 = true
+        this.downIcon12 = true
+        this.downIcon13 = true
+        this.downIcon14 = true
+        this.downIcon15 = true
+        this.downIcon16 = true
+        this.downIcon18 = true
+        this.downIcon19 = true
+        this.downIcon20 = true
+        this.downIcon21 = true
+        this.downIcon22 = true
+        this.downIcon23 = true
+      }
+      if (this.downIcon17 == true) {
+        this.selctIcon = !this.selctIcon
+      }
     },
     changes18() {
       this.downIcon18 = !this.downIcon18
       this.obj = this.objcontent[16]
-      this.selctIcon = !this.selctIcon
+      if (this.selctIcon == true) {
+        this.selctIcon = !this.selctIcon
+      } else {
+        this.downIcon = true
+        this.downIcon2 = true
+        this.downIcon3 = true
+        this.downIcon4 = true
+        this.downIcon5 = true
+        this.downIcon6 = true
+        this.downIcon7 = true
+        this.downIcon8 = true
+        this.downIcon9 = true
+        this.downIcon10 = true
+        this.downIcon11 = true
+        this.downIcon12 = true
+        this.downIcon13 = true
+        this.downIcon14 = true
+        this.downIcon15 = true
+        this.downIcon16 = true
+        this.downIcon17 = true
+        this.downIcon19 = true
+        this.downIcon20 = true
+        this.downIcon21 = true
+        this.downIcon22 = true
+        this.downIcon23 = true
+      }
+      if (this.downIcon18 == true) {
+        this.selctIcon = !this.selctIcon
+      }
     },
     changes19() {
       this.downIcon19 = !this.downIcon19
       this.obj = this.objcontent[17]
-      this.selctIcon = !this.selctIcon
+      if (this.selctIcon == true) {
+        this.selctIcon = !this.selctIcon
+      } else {
+        this.downIcon = true
+        this.downIcon2 = true
+        this.downIcon3 = true
+        this.downIcon4 = true
+        this.downIcon5 = true
+        this.downIcon6 = true
+        this.downIcon7 = true
+        this.downIcon8 = true
+        this.downIcon9 = true
+        this.downIcon10 = true
+        this.downIcon11 = true
+        this.downIcon12 = true
+        this.downIcon13 = true
+        this.downIcon14 = true
+        this.downIcon15 = true
+        this.downIcon16 = true
+        this.downIcon17 = true
+        this.downIcon18 = true
+        this.downIcon20 = true
+        this.downIcon21 = true
+        this.downIcon22 = true
+        this.downIcon23 = true
+      }
+      if (this.downIcon19 == true) {
+        this.selctIcon = !this.selctIcon
+      }
     },
     changes20() {
       this.downIcon20 = !this.downIcon20
       this.obj = this.objcontent[18]
-      this.selctIcon = !this.selctIcon
+      if (this.selctIcon == true) {
+        this.selctIcon = !this.selctIcon
+      } else {
+        this.downIcon = true
+        this.downIcon2 = true
+        this.downIcon3 = true
+        this.downIcon4 = true
+        this.downIcon5 = true
+        this.downIcon6 = true
+        this.downIcon7 = true
+        this.downIcon8 = true
+        this.downIcon9 = true
+        this.downIcon10 = true
+        this.downIcon11 = true
+        this.downIcon12 = true
+        this.downIcon13 = true
+        this.downIcon14 = true
+        this.downIcon15 = true
+        this.downIcon16 = true
+        this.downIcon17 = true
+        this.downIcon18 = true
+        this.downIcon19 = true
+        this.downIcon21 = true
+        this.downIcon22 = true
+        this.downIcon23 = true
+      }
+      if (this.downIcon20 == true) {
+        this.selctIcon = !this.selctIcon
+      }
     },
     changes21() {
       this.downIcon21 = !this.downIcon21
       this.obj = this.objcontent[19]
-      this.selctIcon = !this.selctIcon
+      if (this.selctIcon == true) {
+        this.selctIcon = !this.selctIcon
+      } else {
+        this.downIcon = true
+        this.downIcon2 = true
+        this.downIcon3 = true
+        this.downIcon4 = true
+        this.downIcon5 = true
+        this.downIcon6 = true
+        this.downIcon7 = true
+        this.downIcon8 = true
+        this.downIcon9 = true
+        this.downIcon10 = true
+        this.downIcon11 = true
+        this.downIcon12 = true
+        this.downIcon13 = true
+        this.downIcon14 = true
+        this.downIcon15 = true
+        this.downIcon16 = true
+        this.downIcon17 = true
+        this.downIcon18 = true
+        this.downIcon19 = true
+        this.downIcon20 = true
+        this.downIcon22 = true
+        this.downIcon23 = true
+      }
+      if (this.downIcon21 == true) {
+        this.selctIcon = !this.selctIcon
+      }
     },
     changes22() {
       this.downIcon22 = !this.downIcon22
       this.obj = this.objcontent[20]
-      this.selctIcon = !this.selctIcon
+      if (this.selctIcon == true) {
+        this.selctIcon = !this.selctIcon
+      } else {
+        this.downIcon = true
+        this.downIcon2 = true
+        this.downIcon3 = true
+        this.downIcon4 = true
+        this.downIcon5 = true
+        this.downIcon6 = true
+        this.downIcon7 = true
+        this.downIcon8 = true
+        this.downIcon9 = true
+        this.downIcon10 = true
+        this.downIcon11 = true
+        this.downIcon12 = true
+        this.downIcon13 = true
+        this.downIcon14 = true
+        this.downIcon15 = true
+        this.downIcon16 = true
+        this.downIcon17 = true
+        this.downIcon18 = true
+        this.downIcon19 = true
+        this.downIcon20 = true
+        this.downIcon21 = true
+        this.downIcon23 = true
+      }
+      if (this.downIcon22 == true) {
+        this.selctIcon = !this.selctIcon
+      }
     },
     changes23() {
       this.downIcon23 = !this.downIcon23
       this.obj = this.objcontent[21]
-      this.selctIcon = !this.selctIcon
+      if (this.selctIcon == true) {
+        this.selctIcon = !this.selctIcon
+      } else {
+        this.downIcon = true
+        this.downIcon2 = true
+        this.downIcon3 = true
+        this.downIcon4 = true
+        this.downIcon5 = true
+        this.downIcon6 = true
+        this.downIcon7 = true
+        this.downIcon8 = true
+        this.downIcon9 = true
+        this.downIcon10 = true
+        this.downIcon11 = true
+        this.downIcon12 = true
+        this.downIcon13 = true
+        this.downIcon14 = true
+        this.downIcon15 = true
+        this.downIcon16 = true
+        this.downIcon17 = true
+        this.downIcon18 = true
+        this.downIcon19 = true
+        this.downIcon20 = true
+        this.downIcon21 = true
+        this.downIcon22 = true
+      }
+      if (this.downIcon23 == true) {
+        this.selctIcon = !this.selctIcon
+      }
     },
-    selectshow() {
-      this.selctIcon = !this.selctIcon
-    }
   },
   mounted: function () {
     let img = document.getElementById('bac')

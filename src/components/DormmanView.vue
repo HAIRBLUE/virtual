@@ -8,7 +8,7 @@
       </router-link>
       <div class="Ti">
         <div class="title">
-          男生寝室
+          学生公寓7-10号楼
         </div>
       </div>
     </div>
@@ -17,15 +17,15 @@
         :options="playerOptions" />
     </div>
     <div class="card">
-      <div class="wordone">学生公寓7-10</div>
+      <div class="wordone">学生公寓7-10号楼</div>
       <div class="lo">
         <div>
           <img src="../../static/images/locate.svg" alt="">
         </div>
-        <div>畅享各类美食之处</div>
+        <div>男生公寓</div>
       </div>
       <div class="word">
-        食堂一共有三层，每层数十个窗口，售卖不同种类的餐品。一层主要有本帮快餐、浇头面、麻辣香锅等美食，民族餐厅也在一楼。二楼则有猪肚鸡、石锅拌饭等美食，三层有小炒和教职工餐厅。食堂三楼环境优雅，有舒适的区域供大家用餐。
+        学生公寓7-10号楼是男生公寓，宿舍布局为四人寝，上床下桌，配备空调。每层设有两处卫生间和洗衣机，一层还设有学生活动室，为大家提供了良好的生活环境。
       </div>
       <div class="wordtwo">
         照片预览
@@ -55,8 +55,9 @@ export default {
   data() {
     return {
       imgSrc: [
-        require('../../static/images/tianeone.png'),
-        require('../../static/images/tianeone.png'),
+        require('../../static/images/dormman1.png'),
+        require('../../static/images/dormman2.png'),
+        require('../../static/images/dormman3.png'),
       ],
       startPointX: 0,
       changePointX: 0,

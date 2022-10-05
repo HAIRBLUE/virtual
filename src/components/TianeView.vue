@@ -25,7 +25,7 @@
         <div>绝佳的感受大自然之处</div>
       </div>
       <div class="word">
-        天鹅湖是上海商学院中代表性的水域，饲养着多只天鹅和鸳鸯，是同学们课余时间的休憩之地。不定期还会开启湖中的喷泉，为炎热的夏日带来清凉，形成一处独特的景观。
+        我校天鹅湖是大家晨读的好去处，也是同学们晨跑开始的地方。清晨的天鹅湖不仅可以看见锻炼的同学，也有努力背书的学生，大家用不同的方式开始崭新的一天。天鹅湖树林环绕，引得各种各样的鸟儿在此筑巢，每天的天鹅湖都显得是生机勃勃。
       </div>
       <div class="wordtwo">
         照片预览
@@ -55,8 +55,9 @@ export default {
   data() {
     return {
       imgSrc: [
-        require('../../static/images/tianeone.png'),
-        require('../../static/images/tianeone.png'),
+        require('../../static/images/tiane1.png'),
+        require('../../static/images/tiane2.png'),
+        require('../../static/images/tiane3.png'),
       ],
       startPointX: 0,
       changePointX: 0,

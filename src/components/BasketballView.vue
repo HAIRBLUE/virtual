@@ -55,8 +55,8 @@ export default {
   data() {
     return {
       imgSrc: [
-        require('../../static/images/tianeone.png'),
-        require('../../static/images/tianeone.png'),
+        require('../../static/images/basketball1.png'),
+        require('../../static/images/basketball2.png'),
       ],
       startPointX: 0,
       changePointX: 0,

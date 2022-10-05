@@ -8,7 +8,7 @@
       </router-link>
       <div class="Ti">
         <div class="title">
-          女生寝室
+          学生公寓1-6号楼
         </div>
       </div>
     </div>
@@ -17,7 +17,7 @@
         :options="playerOptions" />
     </div>
     <div class="card">
-      <div class="wordone">学生公寓1-6</div>
+      <div class="wordone">学生公寓1-6号楼</div>
       <div class="lo">
         <div>
           <img src="../../static/images/locate.svg" alt="">

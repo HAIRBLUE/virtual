@@ -22,7 +22,7 @@
         <div>
           <img src="../../static/images/locate.svg" alt="">
         </div>
-        <div>学习&活动之处</div>
+        <div>学习与活动之处</div>
       </div>
       <div class="word">
         一号教学楼是靠近食堂的位置，旁边有学习长廊，接近于学校的北门，是学校教室单号数教室所在的楼层，在顶层和二号教学楼的连接处是舞蹈室。
