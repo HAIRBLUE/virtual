@@ -13,8 +13,8 @@
       </div>
     </div>
     <div class="video" style="">
-      <video-player ref="videoPlayer" class="video-player vjs-custom-skin" :playsinline="false"
-        :options="playerOptions" />
+      <video-player ref="videoPlayer" class="video-player vjs-custom-skin" :playsinline="false" :options="playerOptions"
+        @ended="onPlayerEnded($event)" />
     </div>
     <div class="card">
       <div class="wordone">网球场</div>
@@ -79,7 +79,7 @@ export default {
           }
         ],
         hls: true,
-        poster: '', // 你的封面地址
+        poster: require('../../static/images/tennis-video.png'), // 你的封面地址
         width: 960, // 播放器宽度
         height: 720, // 高度
         notSupportedMessage: '此视频暂无法播放，请稍后再试', // 允许覆盖Video.js无法播放媒体源时显示的默认信息。
@@ -93,6 +93,9 @@ export default {
     }
   },
   methods: {
+    onPlayerEnded() {
+      window.location.reload();
+    },
     show(index) {
       this.changePointX = this.startPointX;
       let slider = document.getElementById('slider');

@@ -6,5 +6,13 @@ const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
   lintOnSave:false,
   transpileDependencies: true,
-  publicPath: './'
+  publicPath: './',
+chainWebpack: config => {
+  config
+    .plugin('html')
+    .tap(args => {
+      args[0].title= '数字孪生'
+      return args
+    })
+}
 })

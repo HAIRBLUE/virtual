@@ -36,43 +36,43 @@
               <!-- 5 -->
               <img id="tag" style=" position: absolute;top: 79.83vw;left: 35vw;" src="../../static/images/stu5.png"
                 alt="" v-show="downIcon2">
-              <img id="tag" style=" position: absolute;top: 79.83vw;left: 37vw;" src="../../static/images/stuchange.png"
-                alt="" v-show="!downIcon2">
+              <img id="tag" style=" position: absolute;top: 79.83vw;left: 37vw;"
+                src="../../static/images/stu5change.png" alt="" v-show="!downIcon2">
             </div>
             <div>
               <!-- 6 -->
               <img id="tag" style=" position: absolute;top: 85.83vw;left: 35vw;" src="../../static/images/stu6.png"
                 alt="" v-show="downIcon2">
-              <img id="tag" style=" position: absolute;top: 85.83vw;left: 37vw;" src="../../static/images/stuchange.png"
-                alt="" v-show="!downIcon2">
+              <img id="tag" style=" position: absolute;top: 85.83vw;left: 37vw;"
+                src="../../static/images/stu6change.png" alt="" v-show="!downIcon2">
             </div>
             <div>
               <!--1-->
               <img id="tag" style=" position: absolute;top: 67.83vw;left: 22vw;" src="../../static/images/stu1.png"
                 alt="" v-show="downIcon2">
-              <img id="tag" style=" position: absolute;top: 67.83vw;left: 24vw;" src="../../static/images/stuchange.png"
-                alt="" v-show="!downIcon2">
+              <img id="tag" style=" position: absolute;top: 67.83vw;left: 24vw;"
+                src="../../static/images/stu1change.png" alt="" v-show="!downIcon2">
             </div>
             <div>
               <!--2-->
               <img id="tag" style=" position: absolute;top: 73.83vw;left: 22vw;" src="../../static/images/stu2.png"
                 alt="" v-show="downIcon2">
-              <img id="tag" style=" position: absolute;top: 73.83vw;left: 24vw;" src="../../static/images/stuchange.png"
-                alt="" v-show="!downIcon2">
+              <img id="tag" style=" position: absolute;top: 73.83vw;left: 24vw;"
+                src="../../static/images/stu2change.png" alt="" v-show="!downIcon2">
             </div>
             <div>
               <!--3-->
               <img id="tag" style=" position: absolute;top: 79.83vw;left: 22vw;" src="../../static/images/stu3.png"
                 alt="" v-show="downIcon2">
-              <img id="tag" style=" position: absolute;top: 79.83vw;left: 24vw;" src="../../static/images/stuchange.png"
-                alt="" v-show="!downIcon2">
+              <img id="tag" style=" position: absolute;top: 79.83vw;left: 24vw;"
+                src="../../static/images/stu3change.png" alt="" v-show="!downIcon2">
             </div>
             <div>
               <!--4-->
               <img id="tag" style=" position: absolute;top: 85.83vw;left: 22vw;" src="../../static/images/stu4.png"
                 alt="" v-show="downIcon2">
-              <img id="tag" style=" position: absolute;top: 85.83vw;left: 24vw;" src="../../static/images/stuchange.png"
-                alt="" v-show="!downIcon2">
+              <img id="tag" style=" position: absolute;top: 85.83vw;left: 24vw;"
+                src="../../static/images/stu4change.png" alt="" v-show="!downIcon2">
             </div>
           </div>
           <div v-on:click="changes3">
@@ -80,29 +80,29 @@
               <!--7-->
               <img id="tag" style=" position: absolute;top: 67.83vw;left: 8vw;" src="../../static/images/stu7.png"
                 alt="" v-show="downIcon3">
-              <img id="tag" style=" position: absolute;top: 67.83vw;left: 10vw;" src="../../static/images/stuchange.png"
-                alt="" v-show="!downIcon3">
+              <img id="tag" style=" position: absolute;top: 67.83vw;left: 10vw;"
+                src="../../static/images/stu7change.png" alt="" v-show="!downIcon3">
             </div>
             <div>
               <!--8-->
               <img id="tag" style=" position: absolute;top: 73.83vw;left: 8vw;" src="../../static/images/stu8.png"
                 alt="" v-show="downIcon3">
-              <img id="tag" style=" position: absolute;top: 73.83vw;left: 10vw;" src="../../static/images/stuchange.png"
-                alt="" v-show="!downIcon3">
+              <img id="tag" style=" position: absolute;top: 73.83vw;left: 10vw;"
+                src="../../static/images/stu8change.png" alt="" v-show="!downIcon3">
             </div>
             <div>
               <!--9-->
               <img id="tag" style=" position: absolute;top: 79.83vw;left: 8vw;" src="../../static/images/stu9.png"
                 alt="" v-show="downIcon3">
-              <img id="tag" style=" position: absolute;top: 79.83vw;left: 10vw;" src="../../static/images/stuchange.png"
-                alt="" v-show="!downIcon3">
+              <img id="tag" style=" position: absolute;top: 79.83vw;left: 10vw;"
+                src="../../static/images/stu9change.png" alt="" v-show="!downIcon3">
             </div>
             <div>
               <!--10-->
               <img id="tag" style=" position: absolute;top: 85.83vw;left: 8vw;" src="../../static/images/stu10.png"
                 alt="" v-show="downIcon3">
-              <img id="tag" style=" position: absolute;top: 85.83vw;left: 10vw;" src="../../static/images/stuchange.png"
-                alt="" v-show="!downIcon3">
+              <img id="tag" style=" position: absolute;top: 85.83vw;left: 10vw;"
+                src="../../static/images/stu10change.png" alt="" v-show="!downIcon3">
             </div>
           </div>
         </div>
@@ -129,15 +129,15 @@
               <!-- 4 -->
               <img id="tag" style=" position: absolute;top: 91.83vw;left: 66vw;"
                 src="../../static/images/teachbuilding4.png" alt="" v-show="downIcon5">
-              <img id="tag" style=" position: absolute;top: 91.83vw;left: 69vw;"
-                src="../../static/images/parkchange.png" alt="" v-show="!downIcon5">
+              <img id="tag" style=" position: absolute;top: 91.83vw;left: 68vw;"
+                src="../../static/images/teachange4.png" alt="" v-show="!downIcon5">
             </div>
             <div>
               <!-- 3 -->
               <img id="tag" style=" position: absolute;top: 98.83vw;left: 66vw;"
                 src="../../static/images/teachbuilding3.png" alt="" v-show="downIcon5">
-              <img id="tag" style=" position: absolute;top: 98.83vw;left: 69vw;"
-                src="../../static/images/parkchange.png" alt="" v-show="!downIcon5">
+              <img id="tag" style=" position: absolute;top: 98.83vw;left: 68vw;"
+                src="../../static/images/teachange3.png" alt="" v-show="!downIcon5">
             </div>
           </div>
         </div>
