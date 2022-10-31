@@ -27,6 +27,7 @@ import Football from './components/FootballView.vue'
 import PractraView from './components/PractraView.vue'
 import TennisView from './components/TennisView.vue'
 import SourthGate from './components/SourthgateView.vue'
+import LibraryView from '@/components/LibraryView.vue'
 
 
 import VueRouter from  'vue-router'
@@ -47,7 +48,7 @@ Vue.use(VueRouter);
 //配置路由
 const router = new VueRouter({
   routes: [//当路径为/时 跳转到Home组件中
-    { path: "/", component: Home },
+    { path: "/", component: HelloWorldVue },
     { path: "/HelloWorldVue", component: HelloWorldVue},
     { path: "/TianeView", component: TianeView},
     { path: "/DormmanView", component: DormmanView},
@@ -72,6 +73,7 @@ const router = new VueRouter({
     { path: "/PractraView", component: PractraView},
     { path: "/TennisView", component: TennisView},
     { path: "/SourthGate", component: SourthGate},
+    { path: "/LibraryView", component: LibraryView},
   ],
 //路由模式为历史模式
   mode: "hash"

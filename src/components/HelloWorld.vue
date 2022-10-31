@@ -267,6 +267,13 @@
           <img id="tag" style=" position: absolute;top: 61.83vw;left: 43.8vw;"
             src="../../static/images/sourthchange.png" alt="" v-show="!downIcon23">
         </div>
+        <!-- 图书馆 -->
+        <div v-on:click="changes24" v-show="down5">
+          <img id="tag" style=" position: absolute;top: 80.83vw;left: 51.2vw;" src="../../static/images/sourth.png"
+            alt="" v-show="downIcon24">
+          <img id="tag" style=" position: absolute;top: 80.83vw;left: 53.2vw;"
+            src="../../static/images/sourthchange.png" alt="" v-show="!downIcon24">
+        </div>
       </div>
       <div class="contpart" v-show="!selctIcon">
         <div class="tianpic">
@@ -274,10 +281,10 @@
           <!-- <img src="../../static/images/cantee-main.png" alt=""> -->
         </div>
         <div class="rightcont">
-          <div>{{obj.title}}</div>
+          <div>{{ obj.title }}</div>
           <div class="loacte">
             <img src="../../static/images/locate.svg" alt="">
-            <div>{{obj.discribe}}</div>
+            <div>{{ obj.discribe }}</div>
           </div>
         </div>
 
@@ -330,6 +337,7 @@ export default {
       downIcon21: true,
       downIcon22: true,
       downIcon23: true,
+      downIcon24: true,
       selctIcon: true,
       obj: {},
       objcontent: [
@@ -471,6 +479,12 @@ export default {
           discribe: "男生公寓",
           topage: "DormmanView"
         },
+        {
+          img: require("../../static/images/dormman-main.png"),
+          title: "学生公寓 7-10 号楼",
+          discribe: "男生公寓",
+          topage: "LibraryView"
+        },
       ]
     };
   },
@@ -502,6 +516,7 @@ export default {
       this.downIcon21 = true
       this.downIcon22 = true
       this.downIcon23 = true
+      this.downIcon24 = true
       this.selctIcon = true
     },
     changes() {
@@ -532,6 +547,7 @@ export default {
         this.downIcon21 = true
         this.downIcon22 = true
         this.downIcon23 = true
+        this.downIcon24 = true
       }
       if (this.downIcon == true) {
         this.selctIcon = !this.selctIcon
@@ -565,6 +581,7 @@ export default {
         this.downIcon21 = true
         this.downIcon22 = true
         this.downIcon23 = true
+        this.downIcon24 = true
       }
       if (this.downIcon2 == true) {
         this.selctIcon = !this.selctIcon
@@ -598,6 +615,7 @@ export default {
         this.downIcon21 = true
         this.downIcon22 = true
         this.downIcon23 = true
+        this.downIcon24 = true
       }
       if (this.downIcon3 == true) {
         this.selctIcon = !this.selctIcon
@@ -631,6 +649,7 @@ export default {
         this.downIcon21 = true
         this.downIcon22 = true
         this.downIcon23 = true
+        this.downIcon24 = true
       }
       if (this.downIcon4 == true) {
         this.selctIcon = !this.selctIcon
@@ -664,6 +683,7 @@ export default {
         this.downIcon21 = true
         this.downIcon22 = true
         this.downIcon23 = true
+        this.downIcon24 = true
       }
       if (this.downIcon5 == true) {
         this.selctIcon = !this.selctIcon
@@ -697,6 +717,7 @@ export default {
         this.downIcon21 = true
         this.downIcon22 = true
         this.downIcon23 = true
+        this.downIcon24 = true
       }
       if (this.downIcon6 == true) {
         this.selctIcon = !this.selctIcon
@@ -730,6 +751,7 @@ export default {
         this.downIcon21 = true
         this.downIcon22 = true
         this.downIcon23 = true
+        this.downIcon24 = true
       }
       if (this.downIcon7 == true) {
         this.selctIcon = !this.selctIcon
@@ -763,6 +785,7 @@ export default {
         this.downIcon21 = true
         this.downIcon22 = true
         this.downIcon23 = true
+        this.downIcon24 = true
       }
       if (this.downIcon8 == true) {
         this.selctIcon = !this.selctIcon
@@ -796,6 +819,7 @@ export default {
         this.downIcon21 = true
         this.downIcon22 = true
         this.downIcon23 = true
+        this.downIcon24 = true
       }
       if (this.downIcon9 == true) {
         this.selctIcon = !this.selctIcon
@@ -829,6 +853,7 @@ export default {
         this.downIcon21 = true
         this.downIcon22 = true
         this.downIcon23 = true
+        this.downIcon24 = true
       }
       if (this.downIcon10 == true) {
         this.selctIcon = !this.selctIcon
@@ -862,6 +887,7 @@ export default {
         this.downIcon21 = true
         this.downIcon22 = true
         this.downIcon23 = true
+        this.downIcon24 = true
       }
       if (this.downIcon11 == true) {
         this.selctIcon = !this.selctIcon
@@ -895,6 +921,7 @@ export default {
         this.downIcon21 = true
         this.downIcon22 = true
         this.downIcon23 = true
+        this.downIcon24 = true
       }
       if (this.downIcon12 == true) {
         this.selctIcon = !this.selctIcon
@@ -928,6 +955,7 @@ export default {
         this.downIcon21 = true
         this.downIcon22 = true
         this.downIcon23 = true
+        this.downIcon24 = true
       }
       if (this.downIcon13 == true) {
         this.selctIcon = !this.selctIcon
@@ -961,6 +989,7 @@ export default {
         this.downIcon21 = true
         this.downIcon22 = true
         this.downIcon23 = true
+        this.downIcon24 = true
       }
       if (this.downIcon14 == true) {
         this.selctIcon = !this.selctIcon
@@ -994,6 +1023,7 @@ export default {
         this.downIcon21 = true
         this.downIcon22 = true
         this.downIcon23 = true
+        this.downIcon24 = true
       }
       if (this.downIcon15 == true) {
         this.selctIcon = !this.selctIcon
@@ -1027,6 +1057,7 @@ export default {
         this.downIcon21 = true
         this.downIcon22 = true
         this.downIcon23 = true
+        this.downIcon24 = true
       }
       if (this.downIcon16 == true) {
         this.selctIcon = !this.selctIcon
@@ -1060,6 +1091,7 @@ export default {
         this.downIcon21 = true
         this.downIcon22 = true
         this.downIcon23 = true
+        this.downIcon24 = true
       }
       if (this.downIcon17 == true) {
         this.selctIcon = !this.selctIcon
@@ -1093,6 +1125,7 @@ export default {
         this.downIcon21 = true
         this.downIcon22 = true
         this.downIcon23 = true
+        this.downIcon24 = true
       }
       if (this.downIcon18 == true) {
         this.selctIcon = !this.selctIcon
@@ -1126,6 +1159,7 @@ export default {
         this.downIcon21 = true
         this.downIcon22 = true
         this.downIcon23 = true
+        this.downIcon24 = true
       }
       if (this.downIcon19 == true) {
         this.selctIcon = !this.selctIcon
@@ -1159,6 +1193,7 @@ export default {
         this.downIcon21 = true
         this.downIcon22 = true
         this.downIcon23 = true
+        this.downIcon24 = true
       }
       if (this.downIcon20 == true) {
         this.selctIcon = !this.selctIcon
@@ -1192,6 +1227,7 @@ export default {
         this.downIcon20 = true
         this.downIcon22 = true
         this.downIcon23 = true
+        this.downIcon24 = true
       }
       if (this.downIcon21 == true) {
         this.selctIcon = !this.selctIcon
@@ -1225,6 +1261,7 @@ export default {
         this.downIcon20 = true
         this.downIcon21 = true
         this.downIcon23 = true
+        this.downIcon24 = true
       }
       if (this.downIcon22 == true) {
         this.selctIcon = !this.selctIcon
@@ -1260,6 +1297,40 @@ export default {
         this.downIcon22 = true
       }
       if (this.downIcon23 == true) {
+        this.selctIcon = !this.selctIcon
+      }
+    },
+    changes24() {
+      this.downIcon24 = !this.downIcon24
+      this.obj = this.objcontent[23]
+      if (this.selctIcon == true) {
+        this.selctIcon = !this.selctIcon
+      } else {
+        this.downIcon = true
+        this.downIcon2 = true
+        this.downIcon3 = true
+        this.downIcon4 = true
+        this.downIcon5 = true
+        this.downIcon6 = true
+        this.downIcon7 = true
+        this.downIcon8 = true
+        this.downIcon9 = true
+        this.downIcon10 = true
+        this.downIcon11 = true
+        this.downIcon12 = true
+        this.downIcon13 = true
+        this.downIcon14 = true
+        this.downIcon15 = true
+        this.downIcon16 = true
+        this.downIcon17 = true
+        this.downIcon18 = true
+        this.downIcon19 = true
+        this.downIcon20 = true
+        this.downIcon21 = true
+        this.downIcon22 = true
+        this.downIcon23 = true
+      }
+      if (this.downIcon24 == true) {
         this.selctIcon = !this.selctIcon
       }
     },
@@ -1495,6 +1566,7 @@ export default {
       this.downIcon21 = true
       this.downIcon22 = true
       this.downIcon23 = true
+      this.downIcon24 = true
     })
   }
 }
