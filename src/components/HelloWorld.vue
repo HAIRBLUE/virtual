@@ -269,10 +269,10 @@
         </div>
         <!-- 图书馆 -->
         <div v-on:click="changes24" v-show="down5">
-          <img id="tag" style=" position: absolute;top: 80.83vw;left: 51.2vw;" src="../../static/images/sourth.png"
+          <img id="tag" style=" position: absolute;top: 80.83vw;left: 51.2vw;" src="../../static/images/library.png"
             alt="" v-show="downIcon24">
           <img id="tag" style=" position: absolute;top: 80.83vw;left: 53.2vw;"
-            src="../../static/images/sourthchange.png" alt="" v-show="!downIcon24">
+            src="../../static/images/librarychange.png" alt="" v-show="!downIcon24">
         </div>
       </div>
       <div class="contpart" v-show="!selctIcon">
@@ -480,9 +480,9 @@ export default {
           topage: "DormmanView"
         },
         {
-          img: require("../../static/images/dormman-main.png"),
-          title: "学生公寓 7-10 号楼",
-          discribe: "男生公寓",
+          img: require("../../static/images/library-main.png"),
+          title: "图书馆",
+          discribe: "借阅图书处和自习室",
           topage: "LibraryView"
         },
       ]
@@ -490,7 +490,7 @@ export default {
   },
   methods: {
     AllSCence() {
-      window.location.href = "http://124.222.26.224:80"
+      window.location.href = "http://172.100.48.194:8084"
     },
     fresh() {
       this.downIcon = true

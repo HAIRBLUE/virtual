@@ -8,7 +8,7 @@
       </router-link>
       <div class="Ti">
         <div class="title">
-          学生公寓7-10号楼
+          图书馆
         </div>
       </div>
     </div>
@@ -17,15 +17,16 @@
         @ended="onPlayerEnded($event)" />
     </div>
     <div class="card">
-      <div class="wordone">学生公寓7-10号楼</div>
+      <div class="wordone">图书馆</div>
       <div class="lo">
         <div>
           <img src="../../static/images/locate.svg" alt="">
         </div>
-        <div>男生公寓</div>
+        <div>借阅图书处和自习室</div>
       </div>
       <div class="word">
-        学生公寓7-10号楼是男生公寓，宿舍布局为四人寝，上床下桌，配备空调。每层设有两处卫生间和洗衣机，一层还设有学生活动室，为大家提供了良好的生活环境。
+        图书馆现有藏书100余万册，中外文期刊677种，1839份，电子读物容量260G，分藏在6个院区内。其中总院图书馆馆藏居多，已达80余万册，建筑面积最大。
+        图书馆现已开通了上海教育网络图书馆，为了教学、科研和学习的需要，学校购买了电子图书，使图书馆的数字资源和现代化信息手段的提升上了一个台阶。
       </div>
       <div class="wordtwo">
         照片预览
@@ -33,11 +34,11 @@
       <div class="cardimage">
         <!-- <img src="../../static/images/tianeone.svg"> -->
         <div class="slider" id="slider" style="display: flex;">
-          <img v-for="(src,index) in imgSrc" :key="index" :src="src" @touchstart="touchstart" @touchmove="touchmove"
+          <img v-for="(src, index) in imgSrc" :key="index" :src="src" @touchstart="touchstart" @touchmove="touchmove"
             @click.self="showBigImage($event)" />
         </div>
       </div>
-      <BigImg :visible="photoVisible" :url="bigImgUrl" @closeClick="()=>{photoVisible=false}"></BigImg>
+      <BigImg :visible="photoVisible" :url="bigImgUrl" @closeClick="() => { photoVisible = false }"></BigImg>
     </div>
   </div>
 </template>
@@ -55,9 +56,9 @@ export default {
   data() {
     return {
       imgSrc: [
-        require('../../static/images/dormman1.png'),
-        require('../../static/images/dormman2.png'),
-        require('../../static/images/dormman3.png'),
+        require('../../static/images/library1.png'),
+        require('../../static/images/library2.png'),
+        require('../../static/images/library3.png'),
       ],
       startPointX: 0,
       changePointX: 0,
@@ -76,11 +77,11 @@ export default {
         sources: [
           {
             type: "video/mp4", // m3u8 视频视频类型 这里的种类支持很多种：基本视频格式、直播、流媒体等，具体可以参看git网址项目 
-            src: require("../../static/video/mandorm.mp4")// url地址
+            src: require("../../static/video/library.mp4")// url地址
           }
         ],
         hls: true,
-        poster: require('../../static/images/dormman-video.png'), // 你的封面地址
+        poster: require('../../static/images/library-video.png'), // 你的封面地址
         width: 960, // 播放器宽度
         height: 720, // 高度
         notSupportedMessage: '此视频暂无法播放，请稍后再试', // 允许覆盖Video.js无法播放媒体源时显示的默认信息。

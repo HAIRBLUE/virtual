@@ -48,7 +48,7 @@ Vue.use(VueRouter);
 //配置路由
 const router = new VueRouter({
   routes: [//当路径为/时 跳转到Home组件中
-    { path: "/", component: HelloWorldVue },
+    { path: "/", component: Home },
     { path: "/HelloWorldVue", component: HelloWorldVue},
     { path: "/TianeView", component: TianeView},
     { path: "/DormmanView", component: DormmanView},
