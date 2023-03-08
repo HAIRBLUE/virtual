@@ -1,6 +1,9 @@
 <template>
   <div id="HomePage">
     <div id="main">
+    <div id="change" @click="change">
+        <img src="../static/images/langue.png" alt="">
+      </div>
       <div class="background-img"></div>
       <router-link to="/HelloWorldVue">
         <div id="coming" v-on:click="goTo">
@@ -19,7 +22,10 @@ export default {
   methods: {
     goTo() {
       this.$router.push('./components/HelloWorld.vue')
-    }
+    },
+    change() {
+      window.location.href = "http://172.100.48.194:8081"
+    },
   }
 }
 </script>
@@ -31,6 +37,13 @@ export default {
   background: url(../static/images/welcome.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -o-background-size: cover;
+}
+
+#change img {
+  z-index: 10;
+  position: absolute;
+  margin-top: 2vh;
+  margin-left: 85vw;
 }
 
 #coming img {
